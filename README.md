@@ -1,6 +1,6 @@
 <div align="center">
 
-# 路漫漫-React（Lomind-React）
+# Lomind-React（路漫漫-React）
 
 <p align="center">
     <a href="README.md">English</a> | 
