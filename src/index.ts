@@ -1,1 +1,1 @@
-// export { default as number } from './number';
+export { default as useMount } from './useMount';
