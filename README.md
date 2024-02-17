@@ -15,5 +15,5 @@
 
 ## 🔄 Other Versions
 
-- [路漫漫](https://github.com/kwooshung/lomind)
-- [路漫漫-Vue](https://github.com/kwooshung/lomind-vue)
+- [Lomind](https://github.com/kwooshung/Lomind)
+- [Lomind-Vue](https://github.com/kwooshung/Lomind-Vue)
