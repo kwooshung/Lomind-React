@@ -1,3 +1,7 @@
+## 🎉 0.0.1-beta.4 `2024-02-18`
+### 🐛 Fix
+- 로그에서 오류 링크를 업데이트하십시오 ([#32a59c8](https://github.com/kwooshung/Lomind-React/commit/32a59c81790c1aca26dea0123e1f7395d045afbe))
+
 ## 🎉 0.0.1-beta.3 `2024-02-18`
 ### 📦 Release
 - 새 버전 0.0.1-Beta.3 ([#4c562bf](https://github.com/kwooshung/Lomind-React/commit/4c562bfbacd4735c6a0e1e74f1a97e66b9d3e002))
