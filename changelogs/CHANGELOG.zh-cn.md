@@ -1,3 +1,7 @@
+## 🎉 0.0.1-beta.3 `2024-02-18`
+### 🐛 Fix
+- 更新依赖 ([#aca0e97](https://github.com/kwooshung/Lomind-React/commit/aca0e9786fcd23653c8952e1e18bdda25ab98160))
+
 ## 🎉 0.0.1-beta.2 `2024-02-18`
 ### ✨ Feature
 - 添加一些最常见的钩子 ([#1f7f0cd](https://github.com/kwooshung/files/commit/1f7f0cd9a0742b3792d2f0aa002caaf33ab0ce08))
@@ -10,4 +14,3 @@
 - 项目基本配置 ([#f9f5393](https://github.com/kwooshung/files/commit/f9f5393b574ef5b4a67d6c7558c15278013c4a92))
 ### 🆕 Add
 - 创建许可证 ([#e45bf48](https://github.com/kwooshung/files/commit/e45bf48d654b74f9f5a7724b545a75508fd44a9c))
-
