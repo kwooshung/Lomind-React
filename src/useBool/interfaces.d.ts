@@ -2,7 +2,7 @@
  * @zh 提供布尔状态管理的Hook返回值类型。
  * @en The return type of a hook that provides boolean state management.
  */
-export type TUseBoolReturn = [
+export type TUseBoolResult = [
   /**
    * @zh 当前布尔值
    * @en The current boolean value

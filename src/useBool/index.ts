@@ -1,13 +1,13 @@
 import { useState, useCallback } from 'react';
-import { TUseBoolReturn } from './interfaces';
+import { TUseBoolResult } from './interfaces';
 
 /**
  * @zh 用于管理布尔值的 hook
  * @en Hook for managing boolean values
  * @param {boolean} defaultValue 默认值
- * @returns {TUseBoolReturn} 返回值
+ * @returns {TUseBoolResult} 返回值
  */
-const useBool = (defaultValue: boolean = false): TUseBoolReturn => {
+const useBool = (defaultValue: boolean = false): TUseBoolResult => {
   const [state, setState] = useState<boolean>(defaultValue);
 
   const set = useCallback((value: boolean) => {

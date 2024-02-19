@@ -1,3 +1,9 @@
+## 🎉 0.0.1-beta.5 `2024-02-19`
+### ✨ Feature
+- 新的“ usetheme”钩 ([#dfc60e3](https://github.com/kwooshung/Lomind-React/commit/dfc60e30ec40a94e2c59b6567a50130463d58994))
+### 💩 Optimization
+- 优化计时器，调用来自lomind的相应函数 ([#525618f](https://github.com/kwooshung/Lomind-React/commit/525618f46b873a2cd908cda34cce9274ba1c0e73))
+
 ## 🎉 0.0.1-beta.4 `2024-02-18`
 ### 🐛 Fix
 - 更新日志中的错误链接 ([#32a59c8](https://github.com/kwooshung/Lomind-React/commit/32a59c81790c1aca26dea0123e1f7395d045afbe))

@@ -1,30 +1,27 @@
-import { useEffect, useRef, useCallback } from 'react';
+import { useEffect, useRef } from 'react';
+import { createTimeout } from 'lomind';
 
 /**
- * @zh 用于管理定时器的 hook
- * @en Hook for managing timers
- * @param {() => void} callback 回调函数
- * @param {number | null} delay 延迟时间
- * @returns {() => void} 清除定时器的函数
+ * @zh 延时器 hook，组件卸载时，自动清理定时器
+ * @en Timeout hook, automatically clean up the timer when the component is unmounted
+ * @param {() => void} callback 需要执行的函数
+ * @param {number | null} delay 延迟时间（毫秒）
+ * @returns {() => void} 清除函数
  */
 const useTimeout = (callback: () => void, delay: number | null): (() => void) => {
-  const timeoutId = useRef<number | null>(null);
-
-  const clear = useCallback(() => {
-    if (timeoutId.current !== null) {
-      clearTimeout(timeoutId.current);
-      timeoutId.current = null;
-    }
-  }, []);
+  const clear = useRef<(() => void) | null>(null);
 
   useEffect(() => {
-    if (delay !== null) {
-      timeoutId.current = window.setTimeout(callback, delay);
-    }
-    return clear;
-  }, [delay, callback, clear]);
+    delay && (clear.current = createTimeout(callback, delay));
 
-  return clear;
+    return () => {
+      clear.current && clear.current();
+    };
+  }, [callback, delay]);
+
+  return () => {
+    clear.current && clear.current();
+  };
 };
 
 export default useTimeout;
