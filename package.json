@@ -57,12 +57,15 @@
     "test:ci": "vitest run --coverage",
     "eslint": "eslint . --fix --cache --quiet --report-unused-disable-directives --max-warnings 0 --ext .js,.cjs,.jsx,.ts,.cts,.tsx"
   },
+  "dependencies": {
+    "lomind": "0.0.1-beta.5"
+  },
   "peerDependencies": {
     "react": ">=16.6.0"
   },
   "devDependencies": {
     "@kwooshung/cvlar": "^1.3.7",
-    "@swc/core": "^1.4.1",
+    "@swc/core": "^1.4.2",
     "@testing-library/jest-dom": "^6.4.2",
     "@testing-library/react": "^14.2.1",
     "@testing-library/react-hooks": "^8.0.1",
