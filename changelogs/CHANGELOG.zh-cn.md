@@ -1,3 +1,7 @@
+## 🎉 0.0.10 `2024-02-21`
+### 🐛 Fix
+- 维修测试规则 ([#8e370ef](https://github.com/kwooshung/Lomind-React/commit/8e370ef9af101c4601943789ad23ff184fe2de28))
+
 ## 🎉 0.0.9 `2024-02-21`
 ### 🐛 Fix
 - 从本地存储读取值中，立即将初始值设置为本地存储 ([#cd9a399](https://github.com/kwooshung/Lomind-React/commit/cd9a399125aa9bc8e7d7b7430eee892a48162d08))
