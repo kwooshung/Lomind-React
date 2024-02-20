@@ -1,3 +1,7 @@
+## 🎉 0.0.2 `2024-02-21`
+### 🐛 Fix
+- Изменить тему на темы и назвать единые имена ([#ed1ee04](https://github.com/kwooshung/Lomind-React/commit/ed1ee0423ed69a61441fcac6da06758efcb06b58))
+
 ## 🎉 0.0.1-beta.5 `2024-02-19`
 ### ✨ Feature
 - Новый крюк ([#dfc60e3](https://github.com/kwooshung/Lomind-React/commit/dfc60e30ec40a94e2c59b6567a50130463d58994))
