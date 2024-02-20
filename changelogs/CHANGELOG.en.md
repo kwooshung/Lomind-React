@@ -1,3 +1,7 @@
+## 🎉 0.0.10 `2024-02-21`
+### 🐛 Fix
+- Repair test rules ([#8e370ef](https://github.com/kwooshung/Lomind-React/commit/8e370ef9af101c4601943789ad23ff184fe2de28))
+
 ## 🎉 0.0.9 `2024-02-21`
 ### 🐛 Fix
 - From the local storage reading value, immediately set the initial value to the local storage ([#cd9a399](https://github.com/kwooshung/Lomind-React/commit/cd9a399125aa9bc8e7d7b7430eee892a48162d08))

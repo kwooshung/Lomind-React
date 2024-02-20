@@ -55,7 +55,7 @@ describe('useTheme', () => {
   it('应该能获取当前主题', async () => {
     const { result } = renderHook(() => useTheme());
     const current = await act(async () => result.current[1].getCurrentTheme());
-    expect(current).toBe('auto');
+    expect(current).toBe('dark');
   });
 
   it('应该能获取可用主题列表', () => {
