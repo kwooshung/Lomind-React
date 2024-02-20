@@ -1,3 +1,7 @@
+## 🎉 0.0.5 `2024-02-21`
+### 🐛 Fix
+- 将“ setthemes”更改为`setTheme' ([#b7ab4de](https://github.com/kwooshung/Lomind-React/commit/b7ab4dead645bece44a7db7858aff009b64d87c4))
+
 ## 🎉 0.0.4 `2024-02-21`
 ### 🐛 Fix
 - 修复测试主题名称模拟问题 ([#186e72d](https://github.com/kwooshung/Lomind-React/commit/186e72d1ab46fc48554ec7648729514343b0e221))
