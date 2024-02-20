@@ -1,3 +1,7 @@
+## 🎉 0.0.4 `2024-02-21`
+### 🐛 Fix
+- 修復測試主題名稱模擬問題 ([#186e72d](https://github.com/kwooshung/Lomind-React/commit/186e72d1ab46fc48554ec7648729514343b0e221))
+
 ## 🎉 0.0.3 `2024-02-21`
 ### 🐛 Fix
 - 解決引用主題類別名稱的問題 ([#1fb3da2](https://github.com/kwooshung/Lomind-React/commit/1fb3da2597120755bebaa88da221f6eee1ae1e70))
