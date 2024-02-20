@@ -1,3 +1,7 @@
+## 🎉 0.0.6 `2024-02-21`
+### 🐛 Fix
+- userthemes 기본값을 복구 한 후 로컬 스토리지에서 값을 읽는 데 우선 순위가 없습니다. ([#97e7d78](https://github.com/kwooshung/Lomind-React/commit/97e7d78c8f3a914bcd6191675746821bb8c5ec50))
+
 ## 🎉 0.0.5 `2024-02-21`
 ### 🐛 Fix
 - `setthemes`를`setTheme '으로 변경하십시오 ([#b7ab4de](https://github.com/kwooshung/Lomind-React/commit/b7ab4dead645bece44a7db7858aff009b64d87c4))
