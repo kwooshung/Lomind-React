@@ -1,3 +1,7 @@
+## 🎉 0.0.8 `2024-02-21`
+### 🐛 Fix
+- 종속성을 업데이트하고 버그를 수리하십시오 ([#c5c584d](https://github.com/kwooshung/Lomind-React/commit/c5c584d125d4a25c1ad30da118721e7a416c7931))
+
 ## 🎉 0.0.7 `2024-02-21`
 ### 🐛 Fix
 - 의존성 LOMOND 업데이트 ([#b18cb9d](https://github.com/kwooshung/Lomind-React/commit/b18cb9d5ecb2bc9acf895887c93e4ecde366c9de))
