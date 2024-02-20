@@ -1,3 +1,7 @@
+## 🎉 0.0.3 `2024-02-21`
+### 🐛 Fix
+- 解決引用主題類別名稱的問題 ([#1fb3da2](https://github.com/kwooshung/Lomind-React/commit/1fb3da2597120755bebaa88da221f6eee1ae1e70))
+
 ## 🎉 0.0.2 `2024-02-21`
 ### 🐛 Fix
 - 將主題更改為主題和名稱統一名稱 ([#ed1ee04](https://github.com/kwooshung/Lomind-React/commit/ed1ee0423ed69a61441fcac6da06758efcb06b58))

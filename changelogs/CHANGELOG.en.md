@@ -1,3 +1,7 @@
+## 🎉 0.0.3 `2024-02-21`
+### 🐛 Fix
+- Fix the problem of quoting the name of the theme category ([#1fb3da2](https://github.com/kwooshung/Lomind-React/commit/1fb3da2597120755bebaa88da221f6eee1ae1e70))
+
 ## 🎉 0.0.2 `2024-02-21`
 ### 🐛 Fix
 - Change theme to themes and name uniform names ([#ed1ee04](https://github.com/kwooshung/Lomind-React/commit/ed1ee0423ed69a61441fcac6da06758efcb06b58))
