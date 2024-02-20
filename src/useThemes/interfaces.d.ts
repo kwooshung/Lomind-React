@@ -1,6 +1,6 @@
 /**
- * @zh 提供主题状态管理的Hook返回值类型。
- * @en The return value type of the hook that provides theme state management.
+ * @zh 提供主题状态管理的Hook返回值类型
+ * @en The return value type of the hook that provides theme state management
  */
 export type TThemeResult = [
   /**

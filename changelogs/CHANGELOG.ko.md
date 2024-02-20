@@ -1,3 +1,7 @@
+## 🎉 0.0.2 `2024-02-21`
+### 🐛 Fix
+- 테마를 테마로 변경하고 유니폼 이름을 이름으로 변경하십시오 ([#ed1ee04](https://github.com/kwooshung/Lomind-React/commit/ed1ee0423ed69a61441fcac6da06758efcb06b58))
+
 ## 🎉 0.0.1-beta.5 `2024-02-19`
 ### ✨ Feature
 - 새로운 'usetheme'후크 ([#dfc60e3](https://github.com/kwooshung/Lomind-React/commit/dfc60e30ec40a94e2c59b6567a50130463d58994))
