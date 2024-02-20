@@ -1,3 +1,7 @@
+## 🎉 0.0.9 `2024-02-21`
+### 🐛 Fix
+- From the local storage reading value, immediately set the initial value to the local storage ([#cd9a399](https://github.com/kwooshung/Lomind-React/commit/cd9a399125aa9bc8e7d7b7430eee892a48162d08))
+
 ## 🎉 0.0.8 `2024-02-21`
 ### 🐛 Fix
 - Update dependencies, repair bug ([#c5c584d](https://github.com/kwooshung/Lomind-React/commit/c5c584d125d4a25c1ad30da118721e7a416c7931))
