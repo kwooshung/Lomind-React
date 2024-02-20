@@ -1,3 +1,7 @@
+## 🎉 0.0.6 `2024-02-21`
+### 🐛 Fix
+- 修復用戶主題默認值後，沒有優先級可以從本地存儲中讀取該值 ([#97e7d78](https://github.com/kwooshung/Lomind-React/commit/97e7d78c8f3a914bcd6191675746821bb8c5ec50))
+
 ## 🎉 0.0.5 `2024-02-21`
 ### 🐛 Fix
 - 將“ setthemes”更改為`setTheme' ([#b7ab4de](https://github.com/kwooshung/Lomind-React/commit/b7ab4dead645bece44a7db7858aff009b64d87c4))
