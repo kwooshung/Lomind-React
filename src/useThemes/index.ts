@@ -1,5 +1,6 @@
-import { useState, useEffect, useCallback } from 'react';
+import { useState, useCallback } from 'react';
 import { themes } from 'lomind';
+import useUnmount from '../useUnmount';
 import { TThemeResult } from './interfaces';
 
 /**
@@ -9,7 +10,7 @@ import { TThemeResult } from './interfaces';
  * @param {string[]} initialThemes 初始主题列表
  * @returns {TThemeResult} 主题管理器返回值
  */
-const useThemes = (initialTheme: string = 'auto', initialThemes: string[] = ['light', 'dark', 'auto']): TThemeResult => {
+const useThemes = (initialTheme: string = 'auto', initialThemes: string[] = ['light', 'dark']): TThemeResult => {
   const themesManager = themes.getInstance(initialTheme, initialThemes);
   const [currentTheme, setCurrentTheme] = useState<string>(themesManager.getCurrent());
 
@@ -28,10 +29,9 @@ const useThemes = (initialTheme: string = 'auto', initialThemes: string[] = ['li
     [themesManager]
   );
 
-  useEffect(() => {
-    themesManager.set(initialTheme);
-    return () => themesManager.uninstall();
-  }, [initialTheme, themesManager]);
+  useUnmount(() => {
+    themesManager.uninstall();
+  });
 
   const getCurrentTheme = useCallback(() => themesManager.getCurrent(), [themesManager]);
 
