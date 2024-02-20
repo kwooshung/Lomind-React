@@ -9,35 +9,35 @@ import { TThemeResult } from './interfaces';
  * @param {string[]} initialThemes 初始主题列表
  * @returns {TThemeResult} 主题管理器返回值
  */
-const useTheme = (initialTheme: string = 'auto', initialThemes: string[] = ['light', 'dark', 'auto']): TThemeResult => {
-  const themeManager = themes.getInstance(initialTheme, initialThemes);
-  const [currentTheme, setCurrentTheme] = useState<string>(themeManager.getCurrent());
+const useThemes = (initialTheme: string = 'auto', initialThemes: string[] = ['light', 'dark', 'auto']): TThemeResult => {
+  const themesManager = themes.getInstance(initialTheme, initialThemes);
+  const [currentTheme, setCurrentTheme] = useState<string>(themesManager.getCurrent());
 
   const setTheme = useCallback(
     (theme: string) => {
-      themeManager.set(theme);
+      themesManager.set(theme);
       setCurrentTheme(theme);
     },
-    [themeManager]
+    [themesManager]
   );
 
-  const addTheme = useCallback(
+  const addThemes = useCallback(
     (theme: string | string[]) => {
-      themeManager.add(theme);
+      themesManager.add(theme);
     },
-    [themeManager]
+    [themesManager]
   );
 
   useEffect(() => {
-    themeManager.set(initialTheme);
-    return () => themeManager.uninstall();
-  }, [initialTheme, themeManager]);
+    themesManager.set(initialTheme);
+    return () => themesManager.uninstall();
+  }, [initialTheme, themesManager]);
 
-  const getCurrentTheme = useCallback(() => themeManager.getCurrent(), [themeManager]);
+  const getCurrentTheme = useCallback(() => themesManager.getCurrent(), [themesManager]);
 
-  const getAvailableThemes = useCallback(() => themeManager.getAvailable(), [themeManager]);
+  const getAvailableThemes = useCallback(() => themesManager.getAvailable(), [themesManager]);
 
-  return [currentTheme, { setTheme, addTheme, getCurrentTheme, getAvailableThemes }];
+  return [currentTheme, { setTheme, addThemes, getCurrentTheme, getAvailableThemes }];
 };
 
-export default useTheme;
+export default useThemes;
