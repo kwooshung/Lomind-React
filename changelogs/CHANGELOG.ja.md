@@ -1,3 +1,7 @@
+## 🎉 0.0.3 `2024-02-21`
+### 🐛 Fix
+- テーマカテゴリの名前を引用する問題を修正する ([#1fb3da2](https://github.com/kwooshung/Lomind-React/commit/1fb3da2597120755bebaa88da221f6eee1ae1e70))
+
 ## 🎉 0.0.2 `2024-02-21`
 ### 🐛 Fix
 - テーマをテーマに変更し、均一な名前に名前を付けます ([#ed1ee04](https://github.com/kwooshung/Lomind-React/commit/ed1ee0423ed69a61441fcac6da06758efcb06b58))
