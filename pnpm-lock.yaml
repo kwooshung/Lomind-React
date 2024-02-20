@@ -6,8 +6,8 @@ settings:
 
 dependencies:
   lomind:
-    specifier: 0.0.3
-    version: 0.0.3
+    specifier: 0.0.4
+    version: 0.0.4
 
 devDependencies:
   '@kwooshung/cvlar':
@@ -3809,8 +3809,8 @@ packages:
       wrap-ansi: 9.0.0
     dev: true
 
-  /lomind@0.0.3:
-    resolution: {integrity: sha512-RkS/M1gFKZilCJBXoaTXFWkPmhqf3ogXEpaqBlbM5oPelm3QyTCwdAR8DZyDdgBAGFKHDDY8m8QKcn8wvYA4/A==}
+  /lomind@0.0.4:
+    resolution: {integrity: sha512-Fwxj8Q5JVtcYQR8DnBxtPBJX/wUbrYaK6VQK9X+xJqpiVNTux7EQjedYb8ZwZpf0QtqiO5h3RRB0Vur6M0xIQQ==}
     dev: false
 
   /loose-envify@1.4.0:
@@ -5070,19 +5070,8 @@ packages:
       jest-worker: 27.5.1
       schema-utils: 3.3.0
       serialize-javascript: 6.0.2
-      terser: 5.27.1
+      terser: 5.27.2
       webpack: 5.90.2(@swc/core@1.4.2)(esbuild@0.19.12)
-    dev: true
-
-  /terser@5.27.1:
-    resolution: {integrity: sha512-29wAr6UU/oQpnTw5HoadwjUZnFQXGdOfj0LjZ4sVxzqwHh/QVkvr7m8y9WoR4iN3FRitVduTc6KdjcW38Npsug==}
-    engines: {node: '>=10'}
-    hasBin: true
-    dependencies:
-      '@jridgewell/source-map': 0.3.5
-      acorn: 8.11.3
-      commander: 2.20.3
-      source-map-support: 0.5.21
     dev: true
 
   /terser@5.27.2:
