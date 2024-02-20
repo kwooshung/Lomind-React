@@ -47,7 +47,7 @@ describe('useTheme', () => {
   it('应该能添加主题', async () => {
     const { result } = renderHook(() => useTheme());
     await act(async () => {
-      result.current[1].addTheme('blue');
+      result.current[1].addThemes('blue');
     });
     expect(result.current[1].getAvailableThemes()).toEqual(['light', 'dark', 'blue']);
   });

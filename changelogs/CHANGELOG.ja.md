@@ -1,3 +1,7 @@
+## 🎉 0.0.5 `2024-02-21`
+### 🐛 Fix
+- 「セットテーマ」を「setTheme」に変更します ([#b7ab4de](https://github.com/kwooshung/Lomind-React/commit/b7ab4dead645bece44a7db7858aff009b64d87c4))
+
 ## 🎉 0.0.4 `2024-02-21`
 ### 🐛 Fix
 - テストテーマ名シミュレーションの問題を修復します ([#186e72d](https://github.com/kwooshung/Lomind-React/commit/186e72d1ab46fc48554ec7648729514343b0e221))
