@@ -19,9 +19,9 @@ export type TThemeResult = [
     /**
      * @zh 添加主题
      * @en Add themes
-     * @param {string | string[]} theme 主题
+     * @param {string | string[]} themes 主题
      */
-    addThemes: (theme: string | string[]) => void;
+    addThemes: (themes: string | string[]) => void;
     /**
      * @zh 获取当前主题
      * @en Get the current theme
