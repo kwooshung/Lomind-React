@@ -1,3 +1,7 @@
+## 🎉 0.0.7 `2024-02-21`
+### 🐛 Fix
+- 更新依赖性洛蒙德 ([#b18cb9d](https://github.com/kwooshung/Lomind-React/commit/b18cb9d5ecb2bc9acf895887c93e4ecde366c9de))
+
 ## 🎉 0.0.6 `2024-02-21`
 ### 🐛 Fix
 - 修复用户主题默认值后，没有优先级可以从本地存储中读取该值 ([#97e7d78](https://github.com/kwooshung/Lomind-React/commit/97e7d78c8f3a914bcd6191675746821bb8c5ec50))
