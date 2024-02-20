@@ -6,7 +6,7 @@ const mockThemes = ['light', 'dark'];
 
 // 模拟 theme 对象
 vi.mock('lomind', () => ({
-  theme: {
+  themes: {
     getInstance: vi.fn().mockImplementation(() => ({
       getCurrent: vi.fn().mockReturnValue(mockTheme),
       set: vi.fn((newTheme) => {

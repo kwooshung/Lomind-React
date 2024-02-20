@@ -1,3 +1,7 @@
+## 🎉 0.0.4 `2024-02-21`
+### 🐛 Fix
+- 테스트 테마 이름 시뮬레이션 문제를 수리하십시오 ([#186e72d](https://github.com/kwooshung/Lomind-React/commit/186e72d1ab46fc48554ec7648729514343b0e221))
+
 ## 🎉 0.0.3 `2024-02-21`
 ### 🐛 Fix
 - 테마 범주의 이름을 인용하는 문제 해결 ([#1fb3da2](https://github.com/kwooshung/Lomind-React/commit/1fb3da2597120755bebaa88da221f6eee1ae1e70))
