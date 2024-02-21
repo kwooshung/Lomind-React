@@ -1,3 +1,7 @@
+## 🎉 0.0.11 `2024-02-21`
+### ✨ Feature
+- 增加Onchange事件 ([#5fe58d0](https://github.com/kwooshung/Lomind-React/commit/5fe58d09509fd10245672051d4eaff1e74e33ab0))
+
 ## 🎉 0.0.10 `2024-02-21`
 ### 🐛 Fix
 - 維修測試規則 ([#8e370ef](https://github.com/kwooshung/Lomind-React/commit/8e370ef9af101c4601943789ad23ff184fe2de28))
