@@ -58,7 +58,7 @@
     "eslint": "eslint . --fix --cache --quiet --report-unused-disable-directives --max-warnings 0 --ext .js,.cjs,.jsx,.ts,.cts,.tsx"
   },
   "dependencies": {
-    "lomind": "0.0.5"
+    "lomind": "0.0.8"
   },
   "peerDependencies": {
     "react": ">=16.6.0"

@@ -6,8 +6,8 @@ settings:
 
 dependencies:
   lomind:
-    specifier: 0.0.5
-    version: 0.0.5
+    specifier: 0.0.8
+    version: 0.0.8
 
 devDependencies:
   '@kwooshung/cvlar':
@@ -3809,8 +3809,8 @@ packages:
       wrap-ansi: 9.0.0
     dev: true
 
-  /lomind@0.0.5:
-    resolution: {integrity: sha512-cXco+T2ILpA4BU8yCdvTV9OO4bI/SlPki74M3/bR4UYBxIPMU6LezOFT/kOSrrDF4D4x6a032+707l5llpE0Vg==}
+  /lomind@0.0.8:
+    resolution: {integrity: sha512-ehWg+SSmi7KEumUtxXSYIRtQBQIEKievA/OiifgloegbKrVdyY9nghyD2WVFGPY2HCNHec9vVTJ/VQ5iPS1qYg==}
     dev: false
 
   /loose-envify@1.4.0:

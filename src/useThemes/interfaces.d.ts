@@ -4,8 +4,13 @@
  */
 export type TThemeResult = [
   /**
-   * @zh 当前主题
-   * @en The current theme
+   * @zh 当前主题值
+   * @en The current theme value
+   */
+  string,
+  /**
+   * @zh 当前主题名称
+   * @en The current theme name
    */
   string,
   {
@@ -23,11 +28,17 @@ export type TThemeResult = [
      */
     addThemes: (themes: string | string[]) => void;
     /**
-     * @zh 获取当前主题
-     * @en Get the current theme
-     * @returns 当前主题
+     * @zh 获取当前主题值
+     * @en Get the current theme value
+     * @returns 当前主题值
      */
-    getCurrentTheme: () => string;
+    getValueTheme: () => string;
+    /**
+     * @zh 获取当前主题名
+     * @en Get the current theme name
+     * @returns 当前主题名
+     */
+    getNameTheme: () => string;
     /**
      * @zh 获取可用主题
      * @en Get available themes

@@ -2,6 +2,7 @@ import { useState, useCallback } from 'react';
 import { themes } from 'lomind';
 import useUnmount from '../useUnmount';
 import { TThemeResult } from './interfaces';
+import { useMount } from '..';
 
 /**
  * @zh 使用主题管理器
@@ -12,12 +13,22 @@ import { TThemeResult } from './interfaces';
  */
 const useThemes = (initialTheme: string = 'auto', initialThemes: string[] = ['light', 'dark']): TThemeResult => {
   const themesManager = themes.getInstance(initialTheme, initialThemes);
-  const [currentTheme, setCurrentTheme] = useState<string>(themesManager.getCurrent());
+
+  const [vaule, setValue] = useState<string>(themesManager.getValue());
+  const [name, setName] = useState<string>(themesManager.getName());
+
+  useMount(() => {
+    themesManager.bindChange((value: string, name: string) => {
+      setValue(value);
+      setName(name);
+    });
+  });
 
   const setTheme = useCallback(
     (theme: string) => {
       themesManager.set(theme);
-      setCurrentTheme(theme);
+      setValue(themesManager.getValue());
+      setName(themesManager.getName());
     },
     [themesManager]
   );
@@ -33,11 +44,13 @@ const useThemes = (initialTheme: string = 'auto', initialThemes: string[] = ['li
     themesManager.uninstall();
   });
 
-  const getCurrentTheme = useCallback(() => themesManager.getCurrent(), [themesManager]);
+  const getValueTheme = useCallback(() => themesManager.getValue(), [themesManager]);
+
+  const getNameTheme = useCallback(() => themesManager.getName(), [themesManager]);
 
   const getAvailableThemes = useCallback(() => themesManager.getAvailable(), [themesManager]);
 
-  return [currentTheme, { setTheme, addThemes, getCurrentTheme, getAvailableThemes }];
+  return [vaule, name, { setTheme, addThemes, getValueTheme, getNameTheme, getAvailableThemes }];
 };
 
 export default useThemes;
