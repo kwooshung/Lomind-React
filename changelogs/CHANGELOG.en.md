@@ -1,3 +1,7 @@
+## 🎉 0.0.17 `2024-06-17`
+### 🐛 Fix
+- Update dependencies, fix exports ([#9821720](https://github.com/kwooshung/Lomind-React/commit/98217208163c6b12f66cccbc6051d0cf258b3de6))
+
 ## 🎉 0.0.16 `2024-06-17`
 ### ✨ Feature
 - Lomind update to the latest version ([#c2807dc](https://github.com/kwooshung/Lomind-React/commit/c2807dcc19d6f424c5c9d2b5fde384a8bb12717a))
