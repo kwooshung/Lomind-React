@@ -92,6 +92,6 @@
   },
   "license": "MIT",
   "dependencies": {
-    "lomind": "^0.0.21"
+    "lomind": "^0.0.22"
   }
 }
