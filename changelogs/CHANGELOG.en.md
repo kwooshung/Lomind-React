@@ -1,3 +1,7 @@
+## 🎉 0.0.12 `2024-06-16`
+### ✨ Feature
+- detector ([#dbe5a79](https://github.com/kwooshung/Lomind-React/commit/dbe5a79a7e5acfb8d3ff07f4298a1d2be0971db4))
+
 ## 🎉 0.0.11 `2024-02-21`
 ### ✨ Feature
 - Increase the onChange incident ([#5fe58d0](https://github.com/kwooshung/Lomind-React/commit/5fe58d09509fd10245672051d4eaff1e74e33ab0))

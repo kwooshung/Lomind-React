@@ -1,6 +1,6 @@
 {
   "name": "lomind-react",
-  "version": "0.0.11",
+  "version": "0.0.12",
   "title": "lomind-react",
   "description": "The React Hooks version of Lomind relies heavily on the core functionalities of Lomind, while providing an array of additional practical React Hooks utilities.",
   "private": false,
@@ -58,38 +58,39 @@
     "eslint": "eslint . --fix --cache --quiet --report-unused-disable-directives --max-warnings 0 --ext .js,.cjs,.jsx,.ts,.cts,.tsx"
   },
   "dependencies": {
-    "lomind": "0.0.8"
+    "lomind": "0.0.12"
   },
   "peerDependencies": {
     "react": ">=16.6.0"
   },
   "devDependencies": {
     "@kwooshung/cvlar": "^1.3.8",
-    "@swc/core": "^1.4.2",
-    "@testing-library/jest-dom": "^6.4.2",
-    "@testing-library/react": "^14.2.1",
+    "@swc/core": "^1.6.1",
+    "@testing-library/jest-dom": "^6.4.6",
+    "@testing-library/react": "^16.0.0",
     "@testing-library/react-hooks": "^8.0.1",
-    "@types/node": "^20.11.19",
+    "@types/node": "^20.14.2",
     "@types/randomatic": "^3.1.5",
-    "@types/react": "^18.2.57",
-    "@typescript-eslint/eslint-plugin": "^7.0.2",
-    "@typescript-eslint/parser": "^7.0.2",
-    "@vitest/coverage-v8": "^1.3.1",
-    "commitlint": "^18.6.1",
-    "eslint": "^8.56.0",
+    "@types/react": "^18.3.3",
+    "@typescript-eslint/eslint-plugin": "^7.13.0",
+    "@typescript-eslint/parser": "^7.13.0",
+    "@vitest/coverage-v8": "^1.6.0",
+    "commitlint": "^19.3.0",
+    "eslint": "^9.5.0",
     "eslint-config-prettier": "^9.1.0",
     "eslint-plugin-prettier": "^5.1.3",
     "husky": "^9.0.11",
-    "jsdom": "^24.0.0",
-    "lint-staged": "^15.2.2",
-    "prettier": "^3.2.5",
-    "react": "^18.2.0",
+    "jsdom": "^24.1.0",
+    "lint-staged": "^15.2.7",
+    "prettier": "^3.3.2",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
     "swc-loader": "^0.2.6",
-    "terser": "^5.27.2",
+    "terser": "^5.31.1",
     "ts-loader": "^9.5.1",
-    "tsup": "^8.0.2",
-    "typescript": "^5.3.3",
-    "vitest": "^1.3.1"
+    "tsup": "^8.1.0",
+    "typescript": "^5.4.5",
+    "vitest": "^1.6.0"
   },
   "license": "MIT"
 }
