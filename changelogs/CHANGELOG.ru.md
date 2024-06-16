@@ -1,3 +1,7 @@
+## 🎉 0.0.13 `2024-06-16`
+### 🐛 Fix
+- Ремонтировать проблему экспорта ([#1321546](https://github.com/kwooshung/Lomind-React/commit/13215461f6dff438fbd75ee36c9a62a336ee0a20))
+
 ## 🎉 0.0.12 `2024-06-16`
 ### ✨ Feature
 - детектор ([#dbe5a79](https://github.com/kwooshung/Lomind-React/commit/dbe5a79a7e5acfb8d3ff07f4298a1d2be0971db4))

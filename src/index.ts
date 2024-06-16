@@ -1,5 +1,6 @@
 export { default as useMount } from './useMount';
 export { default as useThemes } from './useThemes';
+export { default as useDetector } from './useDetector';
 export { default as useEffectUpdate } from './useEffectUpdate';
 export { default as useBool } from './useBool';
 export { default as useInterval } from './useInterval';
