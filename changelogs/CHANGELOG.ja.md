@@ -1,3 +1,7 @@
+## 🎉 0.0.14 `2024-06-16`
+### 🐛 Fix
+- 修理タイプ ([#58cbadb](https://github.com/kwooshung/Lomind-React/commit/58cbadb9bfed6c303fa0117a1c0ebc24312045b5))
+
 ## 🎉 0.0.13 `2024-06-16`
 ### 🐛 Fix
 - 輸出の問題を修復します ([#1321546](https://github.com/kwooshung/Lomind-React/commit/13215461f6dff438fbd75ee36c9a62a336ee0a20))
