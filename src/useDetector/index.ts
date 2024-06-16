@@ -6,7 +6,7 @@ import { detector as Detector } from 'lomind';
  * @en Client information detector
  */
 const useDetector = () => {
-  const [detector, setDetector] = useState(null);
+  const [detector, setDetector] = useState<Detector | null>(null);
 
   useEffect(() => {
     const det = new Detector();
