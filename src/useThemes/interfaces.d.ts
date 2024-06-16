@@ -32,18 +32,18 @@ export type TThemeResult = [
      * @en Get the current theme value
      * @returns 当前主题值
      */
-    getValueTheme: () => string;
+    getThemeValue: () => string;
     /**
      * @zh 获取当前主题名
      * @en Get the current theme name
      * @returns 当前主题名
      */
-    getNameTheme: () => string;
+    getThemeName: () => string;
     /**
      * @zh 获取可用主题
      * @en Get available themes
      * @returns 可用主题
      */
-    getAvailableThemes: () => string[];
+    getThemesAvailable: () => string[];
   }
 ];

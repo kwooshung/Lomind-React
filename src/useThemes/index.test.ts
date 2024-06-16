@@ -57,7 +57,7 @@ describe('useTheme', () => {
       result.current[2].setTheme('dark');
     });
 
-    expect(result.current[2].getNameTheme()).toBe('light'); //这里应该是 `dark` 才对，模拟函数还有点问题；经过在浏览器中实际的测试，确实也是 `dark`，所以这里写成 `light` 只是为了测试通过
+    expect(result.current[2].getThemeName()).toBe('light'); //这里应该是 `dark` 才对，模拟函数还有点问题；经过在浏览器中实际的测试，确实也是 `dark`，所以这里写成 `light` 只是为了测试通过
   });
 
   it('应该能添加主题', async () => {
@@ -65,18 +65,18 @@ describe('useTheme', () => {
     await act(async () => {
       result.current[2].addThemes('blue');
     });
-    expect(result.current[2].getAvailableThemes()).toEqual(['light', 'dark', 'blue']);
+    expect(result.current[2].getThemesAvailable()).toEqual(['light', 'dark', 'blue']);
   });
 
   it('应该能获取当前主题', async () => {
     const { result } = renderHook(() => useThemes());
-    const current = result.current[2].getNameTheme();
+    const current = result.current[2].getThemeName();
     expect(current).toBe('light');
   });
 
   it('应该能获取可用主题列表', () => {
     const { result } = renderHook(() => useThemes());
-    const availableThemes = result.current[2].getAvailableThemes();
+    const availableThemes = result.current[2].getThemesAvailable();
     expect(availableThemes).toEqual(['light', 'dark', 'blue']);
   });
 

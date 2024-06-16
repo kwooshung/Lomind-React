@@ -1,3 +1,11 @@
+## 🎉 0.0.16 `2024-06-17`
+### ✨ Feature
+- Lomond更新到最新版本 ([#c2807dc](https://github.com/kwooshung/Lomind-React/commit/c2807dcc19d6f424c5c9d2b5fde384a8bb12717a))
+
+## 🎉 0.0.15 `2024-06-17`
+### ✨ Feature
+- 全面的客戶信息判斷 ([#fcdfb8d](https://github.com/kwooshung/Lomind-React/commit/fcdfb8d8f3691293b0bacf858aed9fe54a46ba7c))
+
 ## 🎉 0.0.14 `2024-06-16`
 ### 🐛 Fix
 - 維修類型 ([#58cbadb](https://github.com/kwooshung/Lomind-React/commit/58cbadb9bfed6c303fa0117a1c0ebc24312045b5))

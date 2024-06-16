@@ -13,7 +13,8 @@ describe('useDetector', () => {
   it('应该正确获取操作系统信息', () => {
     const { result } = renderHook(() => useDetector());
     const osInfo = result.current.osInfo;
-    expect(osInfo).toHaveProperty('osName');
-    expect(osInfo).toHaveProperty('osVersion');
+    expect(osInfo).toHaveProperty('name');
+    expect(osInfo).toHaveProperty('version');
+    expect(osInfo).toHaveProperty('platform');
   });
 });

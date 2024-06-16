@@ -1,6 +1,6 @@
 {
   "name": "lomind-react",
-  "version": "0.0.14",
+  "version": "0.0.16",
   "title": "lomind-react",
   "description": "The React Hooks version of Lomind relies heavily on the core functionalities of Lomind, while providing an array of additional practical React Hooks utilities.",
   "private": false,
@@ -57,9 +57,6 @@
     "test:ci": "vitest run --coverage",
     "eslint": "eslint . --fix --cache --quiet --report-unused-disable-directives --max-warnings 0 --ext .js,.cjs,.jsx,.ts,.cts,.tsx"
   },
-  "dependencies": {
-    "lomind": "0.0.12"
-  },
   "peerDependencies": {
     "react": ">=16.6.0"
   },
@@ -72,6 +69,7 @@
     "@types/node": "^20.14.2",
     "@types/randomatic": "^3.1.5",
     "@types/react": "^18.3.3",
+    "@types/ua-parser-js": "^0.7.39",
     "@typescript-eslint/eslint-plugin": "^7.13.0",
     "@typescript-eslint/parser": "^7.13.0",
     "@vitest/coverage-v8": "^1.6.0",
@@ -92,5 +90,8 @@
     "typescript": "^5.4.5",
     "vitest": "^1.6.0"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "lomind": "^0.0.22"
+  }
 }
