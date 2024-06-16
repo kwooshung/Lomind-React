@@ -1,3 +1,7 @@
+## 🎉 0.0.17 `2024-06-17`
+### 🐛 Fix
+- 종속성을 업데이트하고 수출을 수정하십시오 ([#9821720](https://github.com/kwooshung/Lomind-React/commit/98217208163c6b12f66cccbc6051d0cf258b3de6))
+
 ## 🎉 0.0.16 `2024-06-17`
 ### ✨ Feature
 - 최신 버전으로의 Lomond 업데이트 ([#c2807dc](https://github.com/kwooshung/Lomind-React/commit/c2807dcc19d6f424c5c9d2b5fde384a8bb12717a))
