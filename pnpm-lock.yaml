@@ -9,8 +9,8 @@ importers:
   .:
     dependencies:
       lomind:
-        specifier: ^0.0.22
-        version: 0.0.22
+        specifier: ^0.0.23
+        version: 0.0.23
     devDependencies:
       '@kwooshung/cvlar':
         specifier: ^1.3.8
@@ -2234,8 +2234,8 @@ packages:
     resolution: {integrity: sha512-niTvB4gqvtof056rRIrTZvjNYE4rCUzO6X/X+kYjd7WFxXeJ0NwEFnRxX6ehkvv3jTwrXnNdtAak5XYZuIyPFw==}
     engines: {node: '>=18'}
 
-  lomind@0.0.22:
-    resolution: {integrity: sha512-+egrWEsIXDY0FO8ZI425VFQznoPRLdijMDK/ITHom+EKJhURnAH8UkKpHTifxmQco5F9LyqBz9RUVSLp1+YcWQ==}
+  lomind@0.0.23:
+    resolution: {integrity: sha512-OJ1pIZJr7YoxL+n8Yzd/oeZmOJGYrVGKuK0+FQMBOuwuVWRz7gY3hbbBYFE+iKJJMc02JChqO4l7hOQmPkBb4A==}
 
   loose-envify@1.4.0:
     resolution: {integrity: sha512-lyuxPGr/Wfhrlem2CL/UcnUc1zcqKAImBDzukY7Y5F/yQiNdko6+fRLevlw1HgMySw7f611UIY408EtxRSoK3Q==}
@@ -5465,7 +5465,7 @@ snapshots:
       strip-ansi: 7.1.0
       wrap-ansi: 9.0.0
 
-  lomind@0.0.22:
+  lomind@0.0.23:
     dependencies:
       lodash: 4.17.21
       ua-parser-js: 1.0.38
