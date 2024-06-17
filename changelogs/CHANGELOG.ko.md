@@ -1,3 +1,7 @@
+## 🎉 0.0.20 `2024-06-17`
+### 🐛 Fix
+- 수출 주문 ([#cc084be](https://github.com/kwooshung/Lomind-React/commit/cc084be709836382b0c35ef30961288443994059))
+
 ## 🎉 0.0.17 `2024-06-17`
 ### 🐛 Fix
 - 종속성을 업데이트하고 수출을 수정하십시오 ([#9821720](https://github.com/kwooshung/Lomind-React/commit/98217208163c6b12f66cccbc6051d0cf258b3de6))
