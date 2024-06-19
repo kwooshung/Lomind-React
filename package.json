@@ -62,16 +62,16 @@
   },
   "devDependencies": {
     "@kwooshung/cvlar": "^1.3.8",
-    "@swc/core": "^1.6.1",
+    "@swc/core": "^1.6.3",
     "@testing-library/jest-dom": "^6.4.6",
     "@testing-library/react": "^16.0.0",
     "@testing-library/react-hooks": "^8.0.1",
-    "@types/node": "^20.14.2",
+    "@types/node": "^20.14.6",
     "@types/randomatic": "^3.1.5",
     "@types/react": "^18.3.3",
     "@types/ua-parser-js": "^0.7.39",
-    "@typescript-eslint/eslint-plugin": "^7.13.0",
-    "@typescript-eslint/parser": "^7.13.0",
+    "@typescript-eslint/eslint-plugin": "^7.13.1",
+    "@typescript-eslint/parser": "^7.13.1",
     "@vitest/coverage-v8": "^1.6.0",
     "commitlint": "^19.3.0",
     "eslint": "^9.5.0",
@@ -92,6 +92,6 @@
   },
   "license": "MIT",
   "dependencies": {
-    "lomind": "^0.0.23"
+    "lomind": "^0.0.25"
   }
 }
