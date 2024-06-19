@@ -9,9 +9,10 @@ import { useMount } from '..';
  * @en Use theme manager
  * @param {string} initialTheme 初始主题
  * @param {string[]} initialThemes 初始主题列表
+ * @param {(value: string, name: string) => void} onChange 主题改变时触发
  * @returns {TThemeResult} 主题管理器返回值
  */
-const useThemes = (initialTheme: string = 'auto', initialThemes: string[] = ['light', 'dark']): TThemeResult => {
+const useThemes = (initialTheme: string = 'auto', initialThemes: string[] = ['light', 'dark'], onChange: (value: string, name: string) => void = () => {}): TThemeResult => {
   const themesManager = themes.getInstance(initialTheme, initialThemes);
 
   const [vaule, setValue] = useState<string>(themesManager.getValue());
@@ -21,6 +22,7 @@ const useThemes = (initialTheme: string = 'auto', initialThemes: string[] = ['li
     themesManager.bindChange((value: string, name: string) => {
       setValue(value);
       setName(name);
+      onChange(value, name);
     });
   });
 

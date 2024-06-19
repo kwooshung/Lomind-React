@@ -1,3 +1,7 @@
+## 🎉 0.0.21 `2024-06-20`
+### 💩 Optimization
+- Добавьте пользовательский онкол ([#715feec](https://github.com/kwooshung/Lomind-React/commit/715feec2f048b78173dc8774421203ef27b2765b))
+
 ## 🎉 0.0.20 `2024-06-17`
 ### 🐛 Fix
 - Порядок экспорта ([#cc084be](https://github.com/kwooshung/Lomind-React/commit/cc084be709836382b0c35ef30961288443994059))
