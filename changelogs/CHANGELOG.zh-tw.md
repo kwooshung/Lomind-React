@@ -1,3 +1,7 @@
+## 🎉 0.0.24 `2024-06-23`
+### 🐛 Fix
+- 維修依賴 ([#ddb20ad](https://github.com/kwooshung/Lomind-React/commit/ddb20ad9c26164b3074d49b9ffa82b2008121806))
+
 ## 🎉 0.0.23 `2024-06-23`
 ### 🐛 Fix
 - 修復Lomond引起的介紹的引入 ([#b3019ca](https://github.com/kwooshung/Lomind-React/commit/b3019cafb09e9a68c355fb437f36f589be4edcc5))
