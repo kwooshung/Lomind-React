@@ -57,6 +57,7 @@
     "test:ci": "vitest run --coverage",
     "eslint": "eslint . --fix --cache --quiet --report-unused-disable-directives --max-warnings 0 --ext .js,.cjs,.jsx,.ts,.cts,.tsx"
   },
+  "license": "MIT",
   "peerDependencies": {
     "react": ">=16.6.0"
   },
@@ -69,7 +70,6 @@
     "@types/node": "^20.14.8",
     "@types/randomatic": "^3.1.5",
     "@types/react": "^18.3.3",
-    "@types/ua-parser-js": "^0.7.39",
     "@typescript-eslint/eslint-plugin": "^7.13.1",
     "@typescript-eslint/parser": "^7.13.1",
     "@vitest/coverage-v8": "^1.6.0",
@@ -90,8 +90,7 @@
     "typescript": "^5.5.2",
     "vitest": "^1.6.0"
   },
-  "license": "MIT",
   "dependencies": {
-    "lomind": "^0.0.28"
+    "lomind": "^0.0.30"
   }
 }
