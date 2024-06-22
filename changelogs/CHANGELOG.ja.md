@@ -1,3 +1,7 @@
+## 🎉 0.0.22 `2024-06-23`
+### 🔗 Dependency
+- 依存関係を更新します ([#97a6f9f](https://github.com/kwooshung/Lomind-React/commit/97a6f9f6e5cdd214ffc353e1eb05eb605abf5988))
+
 ## 🎉 0.0.21 `2024-06-20`
 ### 💩 Optimization
 - カスタムオンチェンジを追加します ([#715feec](https://github.com/kwooshung/Lomind-React/commit/715feec2f048b78173dc8774421203ef27b2765b))
