@@ -1,3 +1,7 @@
+## 🎉 0.0.23 `2024-06-23`
+### 🐛 Fix
+- ロモンドによる導入の紹介を修正します ([#b3019ca](https://github.com/kwooshung/Lomind-React/commit/b3019cafb09e9a68c355fb437f36f589be4edcc5))
+
 ## 🎉 0.0.22 `2024-06-23`
 ### 🔗 Dependency
 - 依存関係を更新します ([#97a6f9f](https://github.com/kwooshung/Lomind-React/commit/97a6f9f6e5cdd214ffc353e1eb05eb605abf5988))
