@@ -1,3 +1,7 @@
+## 🎉 0.0.36 `2024-08-26`
+### 🐛 Fix
+- 新しいバージョンは、いくつかのフック実装を修正しました ([#d9c569e](https://github.com/kwooshung/Lomind-React/commit/d9c569e98edadbb22ada4f2e8e1c05b0cabb8f1a))
+
 ## 🎉 0.0.35 `2024-08-26`
 ### 🐛 Fix
 - フロントエンドでのみ実行できるいくつかのフックの実装を修正 ([#b0aa3b2](https://github.com/kwooshung/Lomind-React/commit/b0aa3b2bfcb0bdaca10bc09ed42bb6e90b19e967))
