@@ -91,6 +91,6 @@
     "vitest": "^2.0.5"
   },
   "dependencies": {
-    "lomind": "^0.0.36"
+    "lomind": "^0.0.37"
   }
 }
