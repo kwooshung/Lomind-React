@@ -1,3 +1,7 @@
+## 🎉 0.0.26 `2024-08-26`
+### ✨ Feature
+- 종속성 업데이트, 테마 기본 기능 수정 ([#8f64f06](https://github.com/kwooshung/Lomind-React/commit/8f64f06cb79e9ec3e0e18ddeb46e0af12b323975))
+
 ## 🎉 0.0.25 `2024-08-26`
 ### ✨ Feature
 - usethemes 업데이트, 더 나은 성능 ([#1736bef](https://github.com/kwooshung/Lomind-React/commit/1736befb1613990be9f2c2a43084851b36ee92f7))
