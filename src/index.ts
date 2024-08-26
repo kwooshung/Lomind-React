@@ -1,3 +1,4 @@
+export { default as useIsSSR } from './useIsSSR';
 export { default as useMount } from './useMount';
 export { default as useThemes } from './useThemes';
 export { default as useEffectUpdate } from './useEffectUpdate';
