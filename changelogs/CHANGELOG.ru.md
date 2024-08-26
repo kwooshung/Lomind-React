@@ -1,3 +1,7 @@
+## 🎉 0.0.34 `2024-08-26`
+### 🐛 Fix
+- Исправить логику крюка ([#f11c444](https://github.com/kwooshung/Lomind-React/commit/f11c4448cabfd2133aba354853921ebeffd57252))
+
 ## 🎉 0.0.33 `2024-08-26`
 ### ✨ Feature
 - Увеличить использование ([#d1e8aed](https://github.com/kwooshung/Lomind-React/commit/d1e8aed75f60933f611ab0624d9c10aab7e7f5f6))
