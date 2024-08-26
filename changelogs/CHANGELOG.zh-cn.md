@@ -1,3 +1,7 @@
+## 🎉 0.0.35 `2024-08-26`
+### 🐛 Fix
+- 修复只能在前端执行的一些钩的实现 ([#b0aa3b2](https://github.com/kwooshung/Lomind-React/commit/b0aa3b2bfcb0bdaca10bc09ed42bb6e90b19e967))
+
 ## 🎉 0.0.34 `2024-08-26`
 ### 🐛 Fix
 - 修复挂钩逻辑 ([#f11c444](https://github.com/kwooshung/Lomind-React/commit/f11c4448cabfd2133aba354853921ebeffd57252))

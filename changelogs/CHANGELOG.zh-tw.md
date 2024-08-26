@@ -1,3 +1,7 @@
+## 🎉 0.0.35 `2024-08-26`
+### 🐛 Fix
+- 修復只能在前端執行的一些鉤的實現 ([#b0aa3b2](https://github.com/kwooshung/Lomind-React/commit/b0aa3b2bfcb0bdaca10bc09ed42bb6e90b19e967))
+
 ## 🎉 0.0.34 `2024-08-26`
 ### 🐛 Fix
 - 修復掛鉤邏輯 ([#f11c444](https://github.com/kwooshung/Lomind-React/commit/f11c4448cabfd2133aba354853921ebeffd57252))

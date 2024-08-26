@@ -1,3 +1,7 @@
+## 🎉 0.0.35 `2024-08-26`
+### 🐛 Fix
+- 프론트 엔드에서만 수행 할 수있는 일부 후크 구현 수정 ([#b0aa3b2](https://github.com/kwooshung/Lomind-React/commit/b0aa3b2bfcb0bdaca10bc09ed42bb6e90b19e967))
+
 ## 🎉 0.0.34 `2024-08-26`
 ### 🐛 Fix
 - 후크 로직을 수정하십시오 ([#f11c444](https://github.com/kwooshung/Lomind-React/commit/f11c4448cabfd2133aba354853921ebeffd57252))
