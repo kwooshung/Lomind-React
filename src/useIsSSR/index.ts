@@ -1,6 +1,6 @@
-import { useState } from 'react';
 import { isSSR } from 'lomind';
 import useMount from '../useMount';
+import useBool from '@/useBool';
 
 /**
  * @zh 自定义 Hook: 判断是否为服务端渲染
@@ -8,10 +8,9 @@ import useMount from '../useMount';
  * @returns {boolean} 是否为服务端渲染
  */
 const useIsSSR = (): boolean => {
-  const [isServer, setIsServer] = useState<boolean>(true);
+  const [isServer, { set: setIsServer }] = useBool(true);
 
   useMount(() => {
-    // 在客户端渲染时，useEffect 会在第一次渲染后执行
     setIsServer(isSSR());
   });
 
