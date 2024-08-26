@@ -1,3 +1,7 @@
+## 🎉 0.0.33 `2024-08-26`
+### ✨ Feature
+- useissr를 늘리십시오 ([#d1e8aed](https://github.com/kwooshung/Lomind-React/commit/d1e8aed75f60933f611ab0624d9c10aab7e7f5f6))
+
 ## 🎉 0.0.32 `2024-08-26`
 ### ✨ Feature
 - 수리 참고 ([#2a2f770](https://github.com/kwooshung/Lomind-React/commit/2a2f77091113a088fa7fe393e24068341a766a05))
