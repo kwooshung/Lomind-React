@@ -2,48 +2,38 @@
  * @zh 提供主题状态管理的Hook返回值类型
  * @en The return value type of the hook that provides theme state management
  */
-export type TThemeResult = [
+export type TThemeResult = {
   /**
-   * @zh 当前主题值
-   * @en The current theme value
+   * 当前主题值 Current theme value
    */
-  string,
+  themeValue: string;
   /**
-   * @zh 当前主题名称
-   * @en The current theme name
+   * 当前主题名称 Current theme name
    */
-  string,
-  {
-    /**
-     * @zh 设置主题
-     * @en Set theme
-     * @param {string} theme 主题
-     * @returns 无返回值
-     */
-    setTheme: (theme: string) => void;
-    /**
-     * @zh 添加主题
-     * @en Add themes
-     * @param {string | string[]} themes 主题
-     */
-    addThemes: (themes: string | string[]) => void;
-    /**
-     * @zh 获取当前主题值
-     * @en Get the current theme value
-     * @returns 当前主题值
-     */
-    getThemeValue: () => string;
-    /**
-     * @zh 获取当前主题名
-     * @en Get the current theme name
-     * @returns 当前主题名
-     */
-    getThemeName: () => string;
-    /**
-     * @zh 获取可用主题
-     * @en Get available themes
-     * @returns 可用主题
-     */
-    getThemesAvailable: () => string[];
-  }
-];
+  themeName: string;
+  /**
+   * 设置主题 Set theme
+   * @param {string} theme 主题名称 Theme name
+   */
+  setTheme: (theme: string) => void;
+  /**
+   * 添加主题 Add theme
+   * @param {string | string[]} theme 主题名称 Theme name
+   */
+  addTheme: (theme: string | string[]) => void;
+  /**
+   * 获取可用主题 Get available themes
+   * @returns {string[]}
+   */
+  getAvailableThemes: () => string[];
+  /**
+   * 添加主题变化监听器 Add theme change listener
+   * @param {(value: string, name: string) => void} callback 主题变化时触发的回调 The callback triggered when the theme changes
+   */
+  addThemeChangeListener: (callback: (value: string, name: string) => void) => void;
+  /**
+   * 移除主题变化监听器 Remove theme change listener
+   * @param {(value: string, name: string) => void} callback 要移除的回调函数 The callback function to be removed
+   */
+  removeThemeChangeListener: (callback: (value: string, name: string) => void) => void;
+};
