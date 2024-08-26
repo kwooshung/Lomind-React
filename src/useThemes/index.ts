@@ -3,8 +3,8 @@ import { themes as Themes, isSSR } from 'lomind';
 import { TThemeResult } from './interfaces';
 
 /**
- * @zh 主题 hook
- * @en Theme hook
+ * @zh 主题 自定义 hook
+ * @en Theme custom hook
  * @param {string} [initialTheme='auto'] 初始主题
  * @param {string[]} [initialThemes=['light', 'dark']] 可用主题
  * @returns {object} 主题对象
