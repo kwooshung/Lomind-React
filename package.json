@@ -1,6 +1,6 @@
 {
   "name": "lomind-react",
-  "version": "0.0.35",
+  "version": "0.0.36",
   "title": "lomind-react",
   "description": "The React Hooks version of Lomind relies heavily on the core functionalities of Lomind, while providing an array of additional practical React Hooks utilities.",
   "private": false,

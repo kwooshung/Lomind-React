@@ -1,3 +1,7 @@
+## 🎉 0.0.36 `2024-08-26`
+### 🐛 Fix
+- 新版本修复了一些挂钩实现 ([#d9c569e](https://github.com/kwooshung/Lomind-React/commit/d9c569e98edadbb22ada4f2e8e1c05b0cabb8f1a))
+
 ## 🎉 0.0.35 `2024-08-26`
 ### 🐛 Fix
 - 修复只能在前端执行的一些钩的实现 ([#b0aa3b2](https://github.com/kwooshung/Lomind-React/commit/b0aa3b2bfcb0bdaca10bc09ed42bb6e90b19e967))
