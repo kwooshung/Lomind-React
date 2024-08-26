@@ -1,3 +1,5 @@
+import useBool from '../useBool';
+import useMount from '../useMount';
 import useDetector from '../useDetector';
 
 /**
@@ -6,8 +8,14 @@ import useDetector from '../useDetector';
  * @returns {boolean} 是否平板
  */
 const useIsTablet = (): boolean => {
-  const det = useDetector();
-  return det.isTablet();
+  const [isTablet, { set: setIsTablet }] = useBool(false);
+
+  useMount(() => {
+    const det = useDetector();
+    setIsTablet(det.isTablet());
+  });
+
+  return isTablet;
 };
 
 export default useIsTablet;

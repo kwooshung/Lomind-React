@@ -1,5 +1,7 @@
+import useMount from '../useMount';
 import useDetector from '../useDetector';
-import { TOSResult } from './interfaces';
+import { useState } from 'react';
+import { IOSInfo, TOSResult } from './interfaces';
 
 /**
  * @zh 只需要系统信息，可以使用此 Hook；若一个组件中包含 useBrowser、useOs、useIsMobile、useIsTablet，其中任意两个及以上，建议使用 useDetector
@@ -7,8 +9,18 @@ import { TOSResult } from './interfaces';
  * @returns {TOSResult} 系统返回值
  */
 const useOS = (): TOSResult => {
-  const det = useDetector();
-  return { info: det.osInfo, isName: det.isOSName, compare: det.compareOSVersion };
+  const [osInfo, setOsInfo] = useState<IOSInfo>();
+  const [isName, setIsName] = useState<(name: string) => boolean>();
+  const [compare, setCompare] = useState<(version: string, operator: '<' | '>' | '=' | '<=' | '>=') => boolean>();
+
+  useMount(() => {
+    const det = useDetector();
+    setOsInfo(det.osInfo);
+    setIsName(det.isOSName);
+    setCompare(det.compareOSVersion);
+  });
+
+  return { info: osInfo, isName, compare };
 };
 
 export default useOS;
