@@ -1,3 +1,5 @@
+import useBool from '../useBool';
+import useMount from '../useMount';
 import useDetector from '../useDetector';
 
 /**
@@ -6,8 +8,14 @@ import useDetector from '../useDetector';
  * @returns {boolean} 是否手机
  */
 const useIsMobile = (): boolean => {
-  const det = useDetector();
-  return det.isMobile();
+  const [isMobile, { set: setIsMobile }] = useBool(false);
+
+  useMount(() => {
+    const det = useDetector();
+    setIsMobile(det.isMobile());
+  });
+
+  return isMobile;
 };
 
 export default useIsMobile;
