@@ -1,3 +1,7 @@
+## 🎉 0.0.31 `2024-08-26`
+### ✨ Feature
+- Обновить зависимость ([#bc5c9e8](https://github.com/kwooshung/Lomind-React/commit/bc5c9e8a4eb9ba3be655b3841d2645d954bf3682))
+
 ## 🎉 0.0.30 `2024-08-26`
 ### ✨ Feature
 - Обновить зависимость ([#c16e8a2](https://github.com/kwooshung/Lomind-React/commit/c16e8a2b4e214a5097929bc2d65c95bf4a6aa4b9))
