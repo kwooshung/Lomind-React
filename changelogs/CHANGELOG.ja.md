@@ -1,3 +1,7 @@
+## 🎉 0.0.25 `2024-08-26`
+### ✨ Feature
+- USETHEMESの更新、より良いパフォーマンス ([#1736bef](https://github.com/kwooshung/Lomind-React/commit/1736befb1613990be9f2c2a43084851b36ee92f7))
+
 ## 🎉 0.0.24 `2024-06-23`
 ### 🐛 Fix
 - 依存を修復します ([#ddb20ad](https://github.com/kwooshung/Lomind-React/commit/ddb20ad9c26164b3074d49b9ffa82b2008121806))

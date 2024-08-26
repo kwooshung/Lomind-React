@@ -1,87 +1,116 @@
-import { useState, useCallback } from 'react';
-import { themes } from 'lomind';
-import useUnmount from '../useUnmount';
+import { useEffect, useState, useCallback, useRef } from 'react';
+import { themes as Themes, isSSR } from 'lomind';
 import { TThemeResult } from './interfaces';
-import { useMount } from '..';
 
 /**
- * @zh 使用主题管理器
- * @en Use theme manager
- * @param {string} initialTheme 初始主题
- * @param {string[]} initialThemes 初始主题列表
- * @param {(value: string, name: string) => void} onChange 主题改变时触发
- * @returns {TThemeResult} 主题管理器返回值
+ * @zh 主题 hook
+ * @en Theme hook
+ * @param {string} [initialTheme='auto'] 初始主题
+ * @param {string[]} [initialThemes=['light', 'dark']] 可用主题
+ * @returns {object} 主题对象
  */
-const useThemes = (initialTheme: string = 'auto', initialThemes: string[] = ['light', 'dark'], onChange: (value: string, name: string) => void = () => {}): TThemeResult => {
-  const themesManager = themes.getInstance(initialTheme, initialThemes);
-
-  const [vaule, setValue] = useState<string>(themesManager.getValue());
-  const [name, setName] = useState<string>(themesManager.getName());
-
-  useMount(() => {
-    themesManager.bindChange((value: string, name: string) => {
-      setValue(value);
-      setName(name);
-      onChange(value, name);
-    });
+const useThemes = (initialTheme: string = 'auto', initialThemes: string[] = ['light', 'dark']): TThemeResult => {
+  const [themeValue, setThemeValue] = useState<string>(() => {
+    if (!isSSR()) {
+      return Themes.getInstance(initialTheme, initialThemes).getValue();
+    }
+    return initialTheme;
   });
+
+  const [themeName, setThemeName] = useState<string>(() => {
+    if (!isSSR()) {
+      return Themes.getInstance(initialTheme, initialThemes).getName();
+    }
+    return initialTheme;
+  });
+
+  const changeListeners = useRef<Array<(value: string, name: string) => void>>([]);
+
+  const handleThemeChange = useCallback((value: string, name: string) => {
+    setThemeValue(value);
+    setThemeName(name);
+    // 调用所有已注册的回调
+    changeListeners.current.forEach((callback) => callback(value, name));
+  }, []);
+
+  useEffect(() => {
+    if (isSSR()) {
+      return;
+    }
+
+    const themeManager = Themes.getInstance(initialTheme, initialThemes);
+    themeManager.bindChange(handleThemeChange);
+
+    return () => {
+      themeManager.uninstall();
+    };
+  }, [initialTheme, initialThemes, handleThemeChange]);
 
   /**
    * @zh 设置主题
    * @en Set theme
    * @param {string} theme 主题名称
    */
-  const setTheme = useCallback(
-    (theme: string) => {
-      themesManager.set(theme);
-      setValue(themesManager.getValue());
-      setName(themesManager.getName());
-    },
-    [themesManager]
-  );
+  const setTheme = useCallback((theme: string) => {
+    if (!isSSR()) {
+      const themeManager = Themes.getInstance();
+      themeManager.set(theme);
+      setThemeValue(themeManager.getValue());
+      setThemeName(themeManager.getName());
+    }
+  }, []);
 
   /**
    * @zh 添加主题
    * @en Add theme
    * @param {string | string[]} theme 主题名称
    */
-  const addThemes = useCallback(
-    (theme: string | string[]) => {
-      themesManager.add(theme);
-    },
-    [themesManager]
-  );
-
-  useUnmount(() => {
-    themesManager.uninstall();
-  });
-
-  /**
-   * @zh 获取主题值
-   * @en Get theme value
-   * @returns {string} 主题值
-   */
-  const getThemeValue = useCallback(() => themesManager.getValue(), [themesManager]);
-
-  /**
-   * @zh 获取主题名称, value=auto 为跟随系统主题，因此需要根据系统主题值返回 light 或 dark
-   * @en Get theme name, value=auto is the system theme, so you need to return light or dark based on the system theme value
-   * @returns {string} 主题名称
-   */
-  const getThemeName = useCallback(() => themesManager.getName(), [themesManager]);
+  const addTheme = useCallback((theme: string | string[]) => {
+    if (!isSSR()) {
+      const themeManager = Themes.getInstance();
+      themeManager.add(theme);
+    }
+  }, []);
 
   /**
    * @zh 获取可用主题
    * @en Get available themes
-   * @returns {string[]} 可用主题
+   * @returns {string[]}
    */
-  const getThemesAvailable = useCallback(() => themesManager.getAvailable(), [themesManager]);
+  const getAvailableThemes = useCallback(() => {
+    if (!isSSR()) {
+      return Themes.getInstance().getAvailable();
+    }
+    return [];
+  }, []);
 
   /**
-   * @zh 返回主题值、主题名称、主题管理器
-   * @en Return theme value, theme name, theme manager
+   * @zh 添加主题变化监听器
+   * @en Add a theme change listener
+   * @param {Function} callback 主题变化时触发的回调
    */
-  return [vaule, name, { setTheme, addThemes, getThemeValue, getThemeName, getThemesAvailable }];
+  const addThemeChangeListener = useCallback((callback: (value: string, name: string) => void) => {
+    changeListeners.current.push(callback);
+  }, []);
+
+  /**
+   * @zh 移除主题变化监听器
+   * @en Remove a theme change listener
+   * @param {Function} callback 要移除的回调函数
+   */
+  const removeThemeChangeListener = useCallback((callback: (value: string, name: string) => void) => {
+    changeListeners.current = changeListeners.current.filter((cb) => cb !== callback);
+  }, []);
+
+  return {
+    themeValue,
+    themeName,
+    setTheme,
+    addTheme,
+    getAvailableThemes,
+    addThemeChangeListener,
+    removeThemeChangeListener
+  };
 };
 
 export default useThemes;
