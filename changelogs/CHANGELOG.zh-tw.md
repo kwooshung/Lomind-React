@@ -1,3 +1,7 @@
+## 🎉 0.0.29 `2024-08-26`
+### ✨ Feature
+- 更新依賴 ([#7d8edfe](https://github.com/kwooshung/Lomind-React/commit/7d8edfec6750960b6b44fe096e5bc47677b57027))
+
 ## 🎉 0.0.28 `2024-08-26`
 ### ✨ Feature
 - 更新依賴 ([#95b069b](https://github.com/kwooshung/Lomind-React/commit/95b069b8607e526491233b71fc7f1243f65df683))
