@@ -1,3 +1,7 @@
+## 🎉 0.0.27 `2024-08-26`
+### ✨ Feature
+- 의존성 업데이트 ([#d647d8f](https://github.com/kwooshung/Lomind-React/commit/d647d8f583738f15578474f0397a1b544b9d8946))
+
 ## 🎉 0.0.26 `2024-08-26`
 ### ✨ Feature
 - 종속성 업데이트, 테마 기본 기능 수정 ([#8f64f06](https://github.com/kwooshung/Lomind-React/commit/8f64f06cb79e9ec3e0e18ddeb46e0af12b323975))
