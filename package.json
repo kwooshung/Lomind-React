@@ -33,16 +33,13 @@
   "bugs": {
     "url": "https://github.com/kwooshung/Lomind-React/issues"
   },
-  "type": "module",
-  "main": "dist/index.cmd.js",
-  "module": "dist/index.esm.js",
-  "unpkg": "dist/index.umd.js",
+  "main": "dist/index.cjs",
+  "module": "dist/index.mjs",
   "types": "dist/index.d.ts",
   "exports": {
     ".": {
-      "require": "./dist/index.cmd.js",
-      "import": "./dist/index.esm.js",
-      "types": "./dist/index.d.ts"
+      "require": "./dist/index.cjs",
+      "import": "./dist/index.mjs"
     }
   },
   "files": [
@@ -63,23 +60,23 @@
   },
   "devDependencies": {
     "@kwooshung/cvlar": "^1.3.8",
-    "@swc/core": "^1.7.18",
+    "@swc/core": "^1.7.22",
     "@testing-library/jest-dom": "^6.5.0",
-    "@testing-library/react": "^16.0.0",
+    "@testing-library/react": "^16.0.1",
     "@testing-library/react-hooks": "^8.0.1",
-    "@types/node": "^22.5.0",
+    "@types/node": "^22.5.2",
     "@types/randomatic": "^3.1.5",
-    "@types/react": "^18.3.4",
-    "@typescript-eslint/eslint-plugin": "^8.2.0",
-    "@typescript-eslint/parser": "^8.2.0",
+    "@types/react": "^18.3.5",
+    "@typescript-eslint/eslint-plugin": "^8.3.0",
+    "@typescript-eslint/parser": "^8.3.0",
     "@vitest/coverage-v8": "^2.0.5",
-    "commitlint": "^19.4.0",
+    "commitlint": "^19.4.1",
     "eslint": "^9.9.1",
     "eslint-config-prettier": "^9.1.0",
     "eslint-plugin-prettier": "^5.2.1",
     "husky": "^9.1.5",
     "jsdom": "^25.0.0",
-    "lint-staged": "^15.2.9",
+    "lint-staged": "^15.2.10",
     "prettier": "^3.3.3",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
@@ -91,6 +88,6 @@
     "vitest": "^2.0.5"
   },
   "dependencies": {
-    "lomind": "^0.0.41"
+    "lomind": "^0.0.42"
   }
 }
