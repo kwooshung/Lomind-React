@@ -1,3 +1,7 @@
+## 🎉 0.0.37 `2024-09-02`
+### 🐛 Fix
+- Fix Package.json для лучшей поддержки CJS ([#f895400](https://github.com/kwooshung/Lomind-React/commit/f895400c21bc4aa187fb4037f9a71f46604c49fc))
+
 ## 🎉 0.0.36 `2024-08-26`
 ### 🐛 Fix
 - Новая версия, исправленная реализация крюка ([#d9c569e](https://github.com/kwooshung/Lomind-React/commit/d9c569e98edadbb22ada4f2e8e1c05b0cabb8f1a))
