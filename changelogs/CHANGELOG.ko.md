@@ -1,3 +1,7 @@
+## 🎉 0.0.37 `2024-09-02`
+### 🐛 Fix
+- CJS를 더 잘 지원하려면 package.json을 수정하십시오 ([#f895400](https://github.com/kwooshung/Lomind-React/commit/f895400c21bc4aa187fb4037f9a71f46604c49fc))
+
 ## 🎉 0.0.36 `2024-08-26`
 ### 🐛 Fix
 - 새 버전은 일부 후크 구현을 수정했습니다 ([#d9c569e](https://github.com/kwooshung/Lomind-React/commit/d9c569e98edadbb22ada4f2e8e1c05b0cabb8f1a))

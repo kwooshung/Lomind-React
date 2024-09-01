@@ -1,3 +1,7 @@
+## 🎉 0.0.37 `2024-09-02`
+### 🐛 Fix
+- 修复软件包。 ([#f895400](https://github.com/kwooshung/Lomind-React/commit/f895400c21bc4aa187fb4037f9a71f46604c49fc))
+
 ## 🎉 0.0.36 `2024-08-26`
 ### 🐛 Fix
 - 新版本修复了一些挂钩实现 ([#d9c569e](https://github.com/kwooshung/Lomind-React/commit/d9c569e98edadbb22ada4f2e8e1c05b0cabb8f1a))
